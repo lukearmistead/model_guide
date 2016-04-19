@@ -39,9 +39,11 @@ __Inflexible__
 __Collinearity, multicollinearity, autocorrelation__ 
 - Risk: If two or more predictor variables are correlated, it hurts the interpretability  of their coefficients and creates a situation where a small change in the data may result in a big change in the coefficient.
 - Diagnosis: Run a scatterplot or correlation matrix to identify collinearity culprits. Large variance inflation factor values (>5) indicate possible multicollinearity.
-- Fix: (i) Drop one or more of the collinear variables, (ii) create an interaction term between the collinear variables (be sure to abide by the heirarchical principle if you use this).
-__Finicky errors__ 
-- Risk: If the errors (the difference between predicted and actual Y) are correlated with themselves or are heteroskedastic (vary irregularly with the predictor), it will result in underestimated or biased standard errors (respectively).
+- Fix: (i) Drop one or more of the collinear variables or (ii) combine collinear variables into a single predictor (β * x1 * x1). Be sure to abide by the heirarchical principle if you use this.
+__Correlated or heteroskedastic errors__ 
+- Risk: If the errors (the difference between predicted and actual Y) are correlated or are heteroskedastic (vary irregularly with the predictor), it will result in underestimated, biased standard errors (respectively).
+- Diagnosis: Check out a scatterplot of the residuals.
+- Fix: For heteroskedasticity, consider (i) transforming Y to even out the variance of the residuals or (ii) using weighted least squares (see below).
 - __Outliers and high leverage points__ - Outliers (irregular points, formally 1.5x the [interquartile range](http://www.mathwords.com/o/outlier.htm)) and high leverage points (unusual values of x) wield an outsized influence on the fitted line and may bias predictions.
 
 #### Parameters
@@ -54,4 +56,5 @@ __Finicky errors__
 - Stochastic gradient descent - 
 
 #### Resources
+[correlated error terms and autocorrelation](http://web.stanford.edu/class/stats191/notebooks/Correlated%20errors.pdf)
 [heteroskedasticity](http://www.statsmakemecry.com/smmctheblog/confusing-stats-terms-explained-heteroscedasticity-heteroske.html)
