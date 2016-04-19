@@ -1,12 +1,4 @@
-# Structure
-## Overview
-## Intuition 
-## Assumptions
-## Pros
-## Cons
-## Reading
-
-# Contents
+# Models covered
 - linear regression
 - logistic regression
 - decision tree regressor/classifier
@@ -21,11 +13,20 @@
 
 # Linear Regression
 ## Overview
-Ordinary Least Squares (OLS) fits a line to the data with the goal of finding a relationship between one or more independent variables (x-axis, z-axis, and so on) and a continuous dependent variable (y-axis). OLS chooses the line that minimizes the squared residuals (squared difference) between the fitted line, which represents the prediction of the dependent variable, and the actual value of the dependent variable. 
-## Intuition
-In the graph below, think of the data points (dots) as pegs fixed into the wall. The line is a stick hovering within the lines. See those dotted lines connecting the pegs to the stick? Imagine that those are rubber bands. The angle and location of the stick, which moves freely, is determined entirely by the position of the fixed pegs. 
+Ordinary Least Squares (OLS) fits a line to the data with the goal of finding a relationship between one or more predictor variables (X) and a continuous response variable (Y). OLS chooses the line that minimizes the squared residuals (squared difference) between the fitted line, which represents the predictions of Y based on X.
 ![alt text](assets/linear_regression.png)
+## Pros
+- Interpretability - OLS provides an unambigous means of interpreting the relationship between X and Y. Each coefficient represents the effect of one predictor variable (x) on the response variable Y, controlling for all other predictor variables.
+- Flexibility
+## Cons
+- Parametric - OLS depends on the idea that there is a linear relationship between X and Y. This assumption is rarely true for complex, real-world interactions, which means that you will likely have to get very creative with feature engineering (transforming X or Y) or deal with biased predictions.
+- Collinearity, multicollinearity, autocorrelation - If one predictor variable is correlated with one or more than one other predictor variable (collinearity and multicollinearity) or correlated with other values of itself (autocorrelation, think stock prices over time), 
 
+
+
+
+
+# THROW AWAY STUFF
 ## Assumptions
 ### Linearity
 - There is a linear relationship between the independent and dependent variables. Real world relationships are often messy, so this assumption is frequently violated.

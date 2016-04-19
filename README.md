@@ -3,6 +3,7 @@
 # Overview
 #### Structure
 - Overview - A short description of how the model works.
+- Applications/examples
 - Pros - The stuff the model is good at
 - Cons - You guessed it! Things this model isn't great at.
 - Parameters - What you can tune and why you'd tune it
@@ -11,4 +12,7 @@
 #### Goals
 1. Create quick and dirty model handbook
 2. Decision-tree style visualization 
-
+3. Common applications
+4. Scoring
+#### 
+overall - drill down over time
