@@ -25,7 +25,6 @@
 # Linear Regression
 ### Overview
 Ordinary Least Squares (OLS) seeks to predict a response variable Y given one or more predictor variables X by fitting a line to express the relationship. OLS chooses the line that minimizes the squared residuals (squared difference) between the predictions of Y, represented by the fitted line, and the actual values of Y. OLS shines when interpretability is the goal but is generally outperformed by other models in raw predictive power.
-![ols_formula](assets/ols_formula.png "a line (blue) fitted to data (red) by minimizing squared residuals (grey)")
 ![linear_regression](assets/linear_regression.png "a line (blue) fitted to data (red) by minimizing squared residuals (grey)")
 ### Merits
 ##### Interpretability
