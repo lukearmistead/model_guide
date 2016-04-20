@@ -1,6 +1,4 @@
-# Open source model guide for data scientists with no time
-#### A quick primer to help you pick the right model for your data. 
-# Overview
+# Pick the right model for your dataset 
 
 #### Structure
 - Overview - A short description of how the model works.
